@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Accueil - Boutique Parfums</title>
+
+<style>
+/* GLOBAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: white;
+}
+
+/* HEADER */
+header {
+  background: #0d0d0d;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #d4af37;
+}
+
+nav a {
+  color: #d4af37;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1523292562811-8fa7962a78c8') center/cover;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 55px;
+  color: #d4af37;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.hero button {
+  padding: 15px 30px;
+  background: #d4af37;
+  border: none;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 25px;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #b8962f;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 35px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  nav a {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="parfums.html">Parfums</a>
+    
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Bienvenue dans notre Boutique de Parfums</h1>
+  <p>Découvrez nos parfums de luxe à prix exceptionnel</p>
+  <button onclick="window.location.href='parfums.html'">Voir les parfums</button>
+</section>
+
+</body>
+</html>
