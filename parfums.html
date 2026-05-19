@@ -1,8 +1,9 @@
 <script>
 
-// URL de ton backend Laravel
-const API_URL = "https://mon-parfum.onrender.com/api/parfums";
+// URL de ton backend Laravel (Render)
+const API_URL = "https://mon-parfum-1.onrender.com/api/parfums";
 
+// Produit sélectionné
 let selectedProduct = null;
 
 // Charger les parfums depuis Laravel
@@ -15,7 +16,7 @@ fetch(API_URL)
     products.forEach(p => {
       productList.innerHTML += `
         <div class="product">
-          <img src="https://mon-parfum.onrender.com/storage/${p.image}">
+          <img src="https://mon-parfum-1.onrender.com/storage/${p.image}">
           <h3>${p.nom}</h3>
           <p>${p.prix} FRCFA</p>
           <button onclick="buyNow(${p.id}, '${p.nom}', ${p.prix}, '${p.image}')">Acheter</button>
@@ -54,7 +55,7 @@ function sendOrder() {
     "🛒 *Nouvelle commande* \n\n" +
     `📦 *Produit :* ${selectedProduct.name}\n` +
     `💰 *Prix :* ${selectedProduct.price} FRCFA\n\n` +
-    `🖼️ *Photo :* https://mon-parfum.onrender.com/storage/${selectedProduct.img}\n\n` +
+    `🖼️ *Photo :* https://mon-parfum-1.onrender.com/storage/${selectedProduct.img}\n\n` +
     `👤 *Nom :* ${name}\n` +
     `📞 *Téléphone :* ${phone}\n` +
     `📍 *Adresse :* ${address}`;
