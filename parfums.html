@@ -1,7 +1,7 @@
 <script>
 
 // URL de ton backend Laravel (Render)
-const API_URL = "https://mon-parfum-1.onrender.com/api/parfums";
+const API_URL = "https://mon-parfum-2.onrender.com/api/parfums";
 
 // Produit sélectionné
 let selectedProduct = null;
@@ -16,7 +16,7 @@ fetch(API_URL)
     products.forEach(p => {
       productList.innerHTML += `
         <div class="product">
-          <img src="https://mon-parfum-1.onrender.com/storage/${p.image}">
+          <img src="https://mon-parfum-2.onrender.com/storage/${p.image}">
           <h3>${p.nom}</h3>
           <p>${p.prix} FRCFA</p>
           <button onclick="buyNow(${p.id}, '${p.nom}', ${p.prix}, '${p.image}')">Acheter</button>
